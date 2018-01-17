@@ -2,6 +2,7 @@
 <section id="sidebar">
 
   <!-- Intro -->
+  {{if not .Params.hideIntro}}
   <section id="intro">
     {{ $pic := .Site.Params.intro.pic }}
     {{ with $pic.src }}
@@ -30,8 +31,10 @@
       </ul>
     {{ end }}
   </section>
+  {{end}}
 
   <!-- Posts List -->
+  {{if .Site.Params.intro.showRecentPosts}}
   <section id="recent-posts">
     <div class="mini-posts">
       <header>
@@ -73,9 +76,11 @@
       {{ end }}
     </div>
   </section>
+  {{end}}
 
   <!-- This if statement only applies if someone goes to the /categories url -->
   <!-- Otherwise this section is shown for all other links -->
+  {{if .Site.Params.intro.showCategories}}
   {{ if ne ($.Scratch.Get "showCategories") false }}
   <!-- Categories List -->
     <section id="categories">
@@ -107,14 +112,17 @@
         {{ end }}
     </section>
   {{ end }}
+  {{ end }}
 
   <!-- About -->
+  {{ if not .Params.hideAbout }}
   {{ with .Site.Params.intro.about }}
     <section id="mini-bio">
       <h3>About</h1>
       <p>{{ . | safeHTML }}</p>
       <a href="/about/" class="button">Learn More</a>
     </section>
+  {{ end }}
   {{ end }}
 
   <!-- Footer -->

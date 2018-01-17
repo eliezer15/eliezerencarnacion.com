@@ -1,7 +1,8 @@
 +++
 title = "About Me"
 date = "2018-01-16"
-showSidebar = false
+hideIntro = true
+hideAbout = true
 +++
 
 My name is Eliezer 'Eli' Encarnacion, and I'm a Software Engineer in Raleigh, North Carolina. My current work involves developing and maintaining highly available and scalable .NET RESTful web services for the [Citrix ShareFile product](https://www.sharefile.com/).

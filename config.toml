@@ -63,6 +63,8 @@ pluralizeListTitles = false
   # These are optional params related to the sidebar. They are recommended, but not
   # required for proper functionality. HTML is supported within the params.
 [params.intro]
+  showRecentPosts = false
+  showCategories = false
   header    = "Eliezer Encarnacion"
 
   paragraph = "Software Engineer & programming enthusiast"
