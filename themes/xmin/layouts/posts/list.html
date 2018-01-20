@@ -4,8 +4,8 @@
 <h1>{{ .Title }}</h1>
 {{ end }}
 
-<ul class="recent-posts">
-  {{ range (where .Data.Pages "Section" "!=" "") }}
+<ul class="posts">
+  {{ range .Data.Pages }}
   <li>
     <a class="post-title" href="{{ .URL }}">{{ .Title }}</a>
     <span class="date">{{ .Date.Format "January 2, 2006" }}</span>    

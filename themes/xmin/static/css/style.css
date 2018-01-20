@@ -32,22 +32,22 @@ body {
   margin-bottom: 10px;
 }
 
-.recent-posts {
+.posts {
   list-style: none;
   padding-left: 0px;
 }
 
-.recent-posts li {
+.posts li {
   margin-bottom: 20px;
 }
 
-.recent-posts .date {
+.posts .date {
   font-weight: 200;
   color: #757575;
   font-size: 16px;
 }
 
-.recent-posts .post-title {
+.posts .post-title {
   font-weight: 500;
   font-size: 18px;
   display: block;

@@ -1,11 +1,10 @@
 {{ partial "header.html" . }}
 
-<h1>{{ .Title }}</h1>
-
 {{ .Content }}
 
+<h3>Recent Posts</h3>
 <ul class="posts">
-  {{ range .Data.Pages }}
+  {{ range first 5 .Data.Pages }}
   <li>
     <a class="post-title" href="{{ .URL }}">{{ .Title }}</a>
     <span class="date">{{ .Date.Format "January 2, 2006" }}</span>    
