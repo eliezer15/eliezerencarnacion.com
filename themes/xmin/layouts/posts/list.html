@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+
+{{if not .IsHome }}
+<h1>{{ .Title }}</h1>
+{{ end }}
+
+<ul class="recent-posts">
+  {{ range (where .Data.Pages "Section" "!=" "") }}
+  <li>
+    <a class="post-title" href="{{ .URL }}">{{ .Title }}</a>
+    <span class="date">{{ .Date.Format "January 2, 2006" }}</span>    
+  </li>
+  {{ end }}
+</ul>
+
+{{ partial "footer.html" . }}
