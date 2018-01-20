@@ -1,3 +1,7 @@
+:root {
+  --main-accent-color: #1976D2;
+}
+
 body {
   max-width: 800px;
   margin: auto;
@@ -7,7 +11,10 @@ body {
 
 /* header and footer areas */
 .menu { padding: 0; }
-.menu li { display: inline-block; }
+.menu li { 
+  display: inline-block;
+  margin-right: 10px; 
+}
 .menu a {
   text-decoration: none;
   background: #448AFF;
@@ -58,6 +65,7 @@ body {
 }
 .menu, .article-meta, footer { text-align: center; }
 .title { font-size: 1.1em; }
+
 footer a { text-decoration: none; }
 hr {
   border-style: dashed;
@@ -93,11 +101,11 @@ th, td { padding: 5px; }
 thead, tfoot, tr:nth-child(even) { background: #eee }
 
 a {
-  color: #1976D2;
+  color: var(--main-accent-color);
   text-decoration: none;
 }
 a:visited {
-  color: #1976D2;
+  color: var(--main-accent-color);
   text-decoration: none;
 }
 

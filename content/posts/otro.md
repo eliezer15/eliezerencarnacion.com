@@ -1,6 +1,7 @@
 +++
 author = "Hugo author"
-categories = ["Hugo","eli"]
+categories = ["Hugo", "Locomotor"]
+tags = [".net","backend"]
 date = "2017-04-02"
 description = ""
 featured = "pic01.jpg"

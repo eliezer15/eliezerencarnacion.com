@@ -3,17 +3,18 @@
 <h1><span class="title">{{ .Title }}</span></h1>
 {{ if .Params.date }}<span class="date">{{ .Date.Format "January 2, 2006" }}</span>{{ end }} by
 {{ with .Params.author }}<span class="author">{{ . }}</span>{{ end }}
-<p class="terms">
-    {{ range $i := (slice) }}
+<div class="terms">
+    {{ range $i := (slice "tags") }}
     {{ with ($.Param $i) }}
-    {{ $i | title }}: {{ range $k := . }}<a href="{{ relURL (print "/" $i "/" $k | urlize) }}">{{$k}}</a> {{ end }}
+    {{ range $k := . }}<a href="{{ relURL (print "/" $i "/" $k | urlize) }}">{{$k}},</a> {{ end }}
     {{ end }}
     {{ end }}
-  </p>
+</div>
 </div>
 
 <main>
 {{ .Content }}
 </main>
 
+{{ template "_internal/disqus.html" . }}
 {{ partial "footer.html" . }}

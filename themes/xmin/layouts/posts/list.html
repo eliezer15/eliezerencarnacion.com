@@ -4,13 +4,16 @@
 <h1>{{ .Title }}</h1>
 {{ end }}
 
+{{ range .Data.Pages.GroupByDate "January 2006" }}
+<h3>{{ .Key }}</h3>
 <ul class="posts">
-  {{ range .Data.Pages }}
+  {{ range .Pages }} 
   <li>
     <a class="post-title" href="{{ .URL }}">{{ .Title }}</a>
     <span class="date">{{ .Date.Format "January 2, 2006" }}</span>    
   </li>
   {{ end }}
 </ul>
+{{ end }}
 
 {{ partial "footer.html" . }}

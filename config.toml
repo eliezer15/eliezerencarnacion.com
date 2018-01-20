@@ -2,8 +2,8 @@ baseurl = "/"
 languageCode = "en-us"
 title = "Eliezer Encarnacion - My Personal site"
 theme = "xmin"
-googleAnalytics = ""
-disqusShortname = ""
+googleAnalytics = "UA-112742588-1"
+disqusShortname = "eliezerencarnacion"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
 footnotereturnlinkcontents = "↩"
@@ -25,12 +25,12 @@ footnotereturnlinkcontents = "↩"
     url = "/posts/"
     weight = 3
 [[menu.main]]
-    name = "Categories"
-    url = "/categories/"
+    name = "Tags"
+    url = "/tags/"
     weight = 4
 [[menu.main]]
-    name = "Resume"
-    url = "/resume/"
+    name = "Contact me"
+    url = "/contact/"
     weight = 5
 
 [params]
