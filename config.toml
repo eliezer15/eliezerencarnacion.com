@@ -28,11 +28,10 @@ footnotereturnlinkcontents = "↩"
     name = "Tags"
     url = "/tags/"
     weight = 4
-[[menu.main]]
-    name = "Contact me"
-    url = "/contact/"
-    weight = 5
-
 [params]
     description = "A personal website powered by hugo"
     footer = "&copy; Eliezer Encarnacion 2018 | Powered by [Hugo] (https://gohugo.io/) and the [XMin theme](https://github.com/yihui/hugo-xmin)"
+    github="eliezer15"
+    email="eliezerencarncion@gmail.com"
+    linkedin="eliezer-encarnacion-bbab995a"
+    stackoverflow="8665434"

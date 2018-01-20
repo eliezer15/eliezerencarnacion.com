@@ -9,6 +9,26 @@ body {
   line-height: 1.5em;
 }
 
+.profile img {
+  max-width:30%;
+  min-width:20px;
+  float:left;
+  margin-right: 20px;
+  border-radius: 10%;
+}
+
+.subtitle {
+  font-style: italic;
+  margin-top: 0px;
+}
+.social-media a {
+  margin-right: 20px;
+}
+
+.social-media i {
+  font-size: 20px;
+}
+
 /* header and footer areas */
 .menu { padding: 0; }
 .menu li { 
@@ -83,7 +103,7 @@ code { background: #f9f9f9; }
 pre code { background: none; }
 
 /* misc elements */
-img, iframe, video { max-width: 100%; }
+iframe, video { max-width: 100%; }
 main { hyphens: auto; }
 blockquote {
   background: #f9f9f9;
