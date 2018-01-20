@@ -1,11 +1,11 @@
-+++
-title = "About Me"
-date = "2018-01-16"
-hideIntro = true
-hideAbout = true
-+++
-
-My name is Eliezer 'Eli' Encarnacion, and I'm a Software Engineer in Raleigh, North Carolina. My current work involves developing and maintaining highly available and scalable .NET RESTful web services for the [Citrix ShareFile product](https://www.sharefile.com/).
+---
+title: About
+includeSocialMedia: true
+---
+<div class="profile">
+![alt text](/img/profile.jpg "profile")
+</div>
+My name is Eliezer "Eli" Encarnacion, and I'm a Software Engineer in Raleigh, North Carolina. My current work involves developing and maintaining highly available and scalable .NET RESTful web services for the [Citrix ShareFile product](https://www.sharefile.com/).
 
 My everyday work involves a lot of backend development of C# (both .NET Framework and .net core) services and RESTful APIs, running on the AWS infrastructure. I occasionally do some database work with both Sql (Sql Server) and NoSql (DynamoDB) technologies.
 

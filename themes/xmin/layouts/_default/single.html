@@ -1,0 +1,20 @@
+{{ partial "header.html" . }}
+<div class="article-meta">
+<h1><span class="title">{{ .Title }}</span></h1>
+{{ if .Params.date }}<span class="date">{{ .Date.Format "January 2, 2006" }}</span>{{ end }} by
+{{ with .Params.author }}<span class="author">{{ . }}</span>{{ end }}
+<div class="terms">
+    {{ range $i := (slice "tags") }}
+    {{ with ($.Param $i) }}
+    {{ range $k := . }}<a href="{{ relURL (print "/" $i "/" $k | urlize) }}">{{$k}},</a> {{ end }}
+    {{ end }}
+    {{ end }}
+</div>
+</div>
+
+<main>
+{{ .Content }}
+</main>
+
+{{ template "_internal/disqus.html" . }}
+{{ partial "footer.html" . }}

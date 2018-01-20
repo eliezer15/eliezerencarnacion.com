@@ -1,0 +1,137 @@
+:root {
+  --main-accent-color: #1976D2;
+}
+
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+  line-height: 1.5em;
+}
+
+.profile img {
+  max-width:30%;
+  min-width:20px;
+  float:left;
+  margin-right: 20px;
+  border-radius: 10%;
+}
+
+.subtitle {
+  font-style: italic;
+  margin-top: 0px;
+}
+.social-media a {
+  margin-right: 20px;
+}
+
+.social-media i {
+  font-size: 20px;
+}
+
+/* header and footer areas */
+.menu { padding: 0; }
+.menu li { 
+  display: inline-block;
+  margin-right: 10px; 
+}
+.menu a {
+  text-decoration: none;
+  background: #448AFF;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+.menu a:hover {
+  color: white;
+  background: #03A9F4;
+}
+
+.terms {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.terms li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.posts {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.posts li {
+  margin-bottom: 20px;
+}
+
+.posts .date {
+  font-weight: 200;
+  color: #757575;
+  font-size: 16px;
+}
+
+.posts .post-title {
+  font-weight: 500;
+  font-size: 18px;
+  display: block;
+}
+
+.menu a:visited {
+  color: #FFFFFF;
+}
+.menu, .article-meta, footer { text-align: center; }
+.title { font-size: 1.1em; }
+
+footer {
+  margin-top: 25px;
+}
+footer a { text-decoration: none; }
+hr {
+  border-style: dashed;
+  color: #ddd;
+}
+
+/* code */
+pre {
+  border: 1px solid #ddd;
+  box-shadow: 5px 5px 5px #eee;
+  padding: 1em;
+  overflow-x: auto;
+}
+code { background: #f9f9f9; }
+pre code { background: none; }
+
+/* misc elements */
+iframe, video { max-width: 100%; }
+main { hyphens: auto; }
+blockquote {
+  background: #f9f9f9;
+  border-left: 5px solid #ccc;
+  padding: 3px 1em 3px;
+}
+
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee }
+
+a {
+  color: var(--main-accent-color);
+  text-decoration: none;
+}
+a:visited {
+  color: var(--main-accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #03A9F4;
+}

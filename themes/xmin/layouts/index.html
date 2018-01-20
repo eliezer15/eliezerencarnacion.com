@@ -1,0 +1,19 @@
+{{ partial "header.html" . }}
+
+<h1>Eliezer Encarnacion</h1>
+<h2 class="subtitle">Software Engineer & programming enthusiast</h2>
+{{ partial "social_media.html" . }}
+
+{{ .Content }}
+
+<h3>Recent Posts</h3>
+<ul class="posts">
+  {{ range first 5 .Data.Pages }}
+  <li>
+    <a class="post-title" href="{{ .URL }}">{{ .Title }}</a>
+    <span class="date">{{ .Date.Format "January 2, 2006" }}</span>    
+  </li>
+  {{ end }}
+</ul>
+
+{{ partial "footer.html" . }}
