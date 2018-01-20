@@ -1,5 +1,6 @@
 ---
 title: About
+includeSocialMedia: true
 ---
 <div class="profile">
 ![alt text](/img/profile.jpg "profile")
