@@ -1,16 +1,17 @@
-+++
-author = "Hugo author"
-categories = ["Hugo","eli"]
-date = "2014-04-02"
-description = ""
-featured = "pic01.jpg"
-featuredalt = "Pic 1"
-featuredpath = "date"
-linktitle = ""
-title = "Getting Started with Hugo"
-type = "post"
-
-+++
+---
+title: A Plain Markdown Post
+author: Yihui Xie
+date: '2016-02-14'
+categories:
+  - Example
+  - Hugo
+tags:
+  - blogdown
+  - Markdown
+  - MathJax
+  - Pandoc
+  - RStudio
+---
 
 ## Step 1. Install Hugo
 
